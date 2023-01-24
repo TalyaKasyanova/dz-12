@@ -1,0 +1,272 @@
+body {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #E0E0E0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 60px 0;
+}
+
+.gallery-section1,
+.gallery-section2,
+.gallery-section3 {
+    padding: 60px 0;
+}
+
+.gallery-section__title {
+    font-family: 'Delius Unicase';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000;
+
+    margin-bottom: 80px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 370px 370px 370px;
+    grid-template-areas:
+        "pic1 pic2 pic2"
+        "pic3 pic3 pic4"
+        "pic5 pic6 pic6";
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    grid-gap: 30px;
+}
+
+.gallery img,
+.gallery2 img,
+.gallery3 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+}
+
+.gallery__item--pic1 {
+    grid-area: pic1;
+}
+
+.gallery__item--pic2 {
+    grid-area: pic2;
+}
+
+.gallery__item--pic3 {
+    grid-area: pic3;
+}
+
+.gallery__item--pic4 {
+    grid-area: pic4;
+}
+
+.gallery__item--pic5 {
+    grid-area: pic5;
+}
+
+.gallery__item--pic6 {
+    grid-area: pic6;
+}
+
+.gallery__item--pic21 {
+    grid-area: pic21;
+}
+
+.gallery__item--pic22 {
+    grid-area: pic22;
+}
+
+.gallery__item--pic23 {
+    grid-area: pic23;
+}
+
+.gallery__item--pic24 {
+    grid-area: pic24;
+}
+
+.gallery__item--pic25 {
+    grid-area: pic25;
+}
+
+.gallery__item--pic26 {
+    grid-area: pic26;
+}
+
+.gallery__item--pic31 {
+    grid-area: pic31;
+}
+
+.gallery__item--pic32 {
+    grid-area: pic32;
+}
+
+.gallery__item--pic33 {
+    grid-area: pic33;
+}
+
+.gallery__item--pic34 {
+    grid-area: pic34;
+}
+
+.gallery__item--pic35 {
+    grid-area: pic35;
+}
+
+.gallery__item--pic36 {
+    grid-area: pic36;
+}
+
+.gallery__item--pic37 {
+    grid-area: pic37;
+}
+
+.gallery__item--pic38 {
+    grid-area: pic39;
+}
+
+.gallery__item--pic310 {
+    grid-area: pic310;
+}
+
+.gallery__item {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery__item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+    border-radius: 20px;
+    transition: .3s all;
+}
+
+
+.gallery__details {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 20px;
+    opacity: 1;
+    transition: .3s all;
+    border-radius: 20px;
+}
+
+.gallery__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px;
+    opacity: 0;
+    z-index: 1;
+    transition: .3s all;
+}
+
+.gallery__icons-link svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 25%;
+}
+
+.gallery__icons-link {
+    position: relative;
+    background: rgba(224, 224, 224, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    fill: #4F4F4F;
+
+}
+
+.gallery__icons-link:hover,
+.gallery__icons-link:hover svg {
+    background: #E0E0E0;
+}
+
+.gallery__item:hover::after {
+    opacity: 0;
+}
+
+.gallery__item:hover .gallery__details,
+.gallery__item:hover .gallery__icons {
+    opacity: 1;
+}
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 370px 770px 370px;
+    grid-template-areas:
+        "pic21 pic22 pic22"
+        "pic23 pic23 pic24"
+        "pic25 pic25 pic26";
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    grid-gap: 30px;
+}
+
+.gallery3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 370px 370px 370px 370px 370px;
+    grid-template-areas:
+        "pic31 pic32 pic33"
+        "pic34 pic32 pic35"
+        "pic36 pic37 pic35"
+        "pic36 pic39 pic39"
+        "pic38 pic38 pic310";
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    grid-gap: 30px;
+}
