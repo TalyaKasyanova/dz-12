@@ -31,7 +31,7 @@ body {
     padding: 60px 0;
 }
 
-.gallery-section1,
+.gallery-section,
 .gallery-section2,
 .gallery-section3 {
     padding: 60px 0;
@@ -199,7 +199,6 @@ body {
 
 .gallery__item:hover .gallery__details {
     background: linear-gradient(180deg, rgba(18, 0, 0, 0.0760679271708683) 0%, rgba(41, 38, 38, 0.8799894957983193) 92%);
-
     border-radius: 0px 0px 20px 20px;
 }
 
